@@ -746,3 +746,12 @@ a {
   font-weight: 400;
   line-height: 26px; /* 185.714% */
 }
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+}
