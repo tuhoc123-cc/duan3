@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ẩm Thực Việt Nam - Hương Vị Đất Việt</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <style>
+        .gradient-text {
+            background: linear-gradient(45deg, #ff4d4d, #ffb84d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+
+        .card-shadow {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Header với animation -->
+    <header class="bg-gradient-to-r from-red-800 to-red-600 text-white fixed w-full z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold animate__animated animate__fadeIn">
+                    <span class="text-yellow-300">Ẩm Thực</span> Việt Nam
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#trang-chu" class="hover:text-yellow-300 transition-colors duration-300">Trang chủ</a>
+                    <a href="#mon-ngon" class="hover:text-yellow-300 transition-colors duration-300">Món ngon</a>
+                    <a href="#video" class="hover:text-yellow-300 transition-colors duration-300">Video</a>
+                    <a href="#vung-mien" class="hover:text-yellow-300 transition-colors duration-300">Vùng miền</a>
+                    <a href="#dat-ban" class="hover:text-yellow-300 transition-colors duration-300">Đặt bàn</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section với video background -->
+    <section class="relative h-screen pt-16" id="trang-chu">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <img src="/api/placeholder/1920/1080" alt="Ẩm thực Việt Nam" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 flex items-center justify-center text-center">
+            <div class="animate__animated animate__fadeInUp">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white">
+                    Hương Vị <span class="text-yellow-300">Đất Việt</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-white mb-8">Khám phá tinh hoa ẩm thực Việt Nam</p>
+                <a href="#dat-ban"
+                    class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors duration-300">
+                    Đặt bàn ngay
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Giới thiệu -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="animate__animated animate__fadeInLeft">
+                    <h2 class="text-4xl font-bold mb-6 gradient-text">Văn Hóa Ẩm Thực Việt Nam</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Ẩm thực Việt Nam không chỉ là những món ăn ngon, mà còn là câu chuyện về văn hóa, lịch sử và con
+                        người Việt Nam. Mỗi món ăn đều mang trong mình một phần di sản văn hóa độc đáo của dân tộc.
+                    </p>
+                    <div class="flex space-x-4">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-red-600">1000+</div>
+                            <div class="text-gray-500">Món ăn</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-red-600">63</div>
+                            <div class="text-gray-500">Tỉnh thành</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-red-600">3</div>
+                            <div class="text-gray-500">Miền văn hóa</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4 animate__animated animate__fadeInRight">
+                    <img src="/api/placeholder/300/400" alt="Ẩm thực 1" class="rounded-lg shadow-lg hover-scale" />
+                    <img src="/api/placeholder/300/400" alt="Ẩm thực 2" class="rounded-lg shadow-lg hover-scale mt-8" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Món ăn nổi bật với hiệu ứng -->
+    <section class="py-20 bg-gray-50" id="mon-ngon">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Món Ăn Nổi Bật</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Phở -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover-scale">
+                    <div class="relative">
+                        <img src="/api/placeholder/400/300" alt="Phở Việt Nam" class="w-full h-64 object-cover" />
+                        <div class="absolute top-4 right-4 bg-red-600 text-white px-4 py-1 rounded-full">
+                            Miền Bắc
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">Phở Việt Nam</h3>
+                        <p class="text-gray-600 mb-4">
+                            Món ăn truyền thống với nước dùng thơm ngon, bánh phở mềm và thịt bò tươi ngon. Được UNESCO
+                            công nhận là di sản văn hóa phi vật thể.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-600 font-semibold">120.000đ</span>
+                            <button
+                                class="bg-red-600 text-white px-4 py-2 rounded-full hover:bg-red-700 transition-colors duration-300">
+                                Đặt ngay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bún bò Huế -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover-scale">
+                    <div class="relative">
+                        <img src="/api/placeholder/400/300" alt="Bún bò Huế" class="w-full h-64 object-cover" />
+                        <div class="absolute top-4 right-4 bg-red-600 text-white px-4 py-1 rounded-full">
+                            Miền Trung
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">Bún Bò Huế</h3>
+                        <p class="text-gray-600 mb-4">
+                            Hương vị đặc trưng của xứ Huế với nước dùng cay nồng, thơm lừng mùi sả và các loại gia vị
+                            đặc biệt.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-600 font-semibold">85.000đ</span>
+                            <button
+                                class="bg-red-600 text-white px-4 py-2 rounded-full hover:bg-red-700 transition-colors duration-300">
+                                Đặt ngay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bánh xèo -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover-scale">
+                    <div class="relative">
+                        <img src="/api/placeholder/400/300" alt="Bánh xèo" class="w-full h-64 object-cover" />
+                        <div class="absolute top-4 right-4 bg-red-600 text-white px-4 py-1 rounded-full">
+                            Miền Nam
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">Bánh Xèo</h3>
+                        <p class="text-gray-600 mb-4">
+                            Bánh xèo giòn rụm với nhân tôm thịt và rau sống, được ăn kèm với nước mắm chua ngọt đặc
+                            trưng.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-600 font-semibold">75.000đ</span>
+                            <button
+                                class="bg-red-600 text-white px-4 py-2 rounded-full hover:bg-red-700 transition-colors duration-300">
+                                Đặt ngay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section với layout mới -->
+    <section class="py-20 bg-white" id="video">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Khám Phá Ẩm Thực</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="bg-gray-50 rounded-xl p-6 hover-scale card-shadow">
+                        <div class="aspect-w-16 aspect-h-9 mb-4">
+                            <img src="/api/placeholder/640/360" alt="Video hướng dẫn" class="rounded-lg w-full" />
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Nghệ Thuật Nấu Phở</h3>
+                        <p class="text-gray-600">Khám phá bí quyết nấu nước dùng phở theo công thức gia truyền.</p>
+                        <div class="mt-4 flex items-center text-sm text-gray-500">
+                            <span>12:30 phút</span>
+                            <span class="mx-2">•</span>
+                            <span>50K lượt xem</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 rounded-xl p-6 hover-scale card-shadow">
+                        <div class="aspect-w-16 aspect-h-9 mb-4">
+                            <img src="/api/placeholder/640/360" alt="Video hướng dẫn" class="rounded-lg w-full" />
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Bánh Chưng Ngày Tết</h3>
+                        <p class="text-gray-600">Hướng dẫn chi tiết cách gói và nấu bánh chưng truyền thống.</p>
+                        <div class="mt-4 flex items-center text-sm text-gray-500">
+                            <span>15:45 phút</span>
+                            <span class="mx-2">•</span>
+                            <span>35K lượt xem</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-900 rounded-xl p-8 text-white">
+                    <h3 class="text-2xl font-bold mb-6">Các Khóa Học Nấu Ăn</h3>
+                    <div class="space-y-6">
+                        <div
+                            class="flex items-center p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors duration-300">
+                            <img src="/api/placeholder/80/80" alt="Khóa học"
+                                class="w-20 h-20 rounded-lg object-cover" />
+                            <div class="ml-4">
+                                <h4 class="font-semibold">Món Ăn Miền Bắc</h4>
+                                <p class="text-gray-400">20 bài học • 15 giờ</p>
+                                <button class="mt-2 text-yellow-400 hover:text-yellow-300">Xem chi tiết →</button>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-center p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors duration-300">
+                            <img src="/api/placeholder/80/80" alt="Khóa học"
+                                class="w-20 h-20 rounded-lg object-cover" />
+                            <div class="ml-4">
+                                <!-- <h4 class="font-sem -->
+
+                                <!-- ... Giữ nguyên phần code phía trước ... -->
+
+                                <div
+                                    class="flex items-center p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors duration-300">
+                                    <img src="/api/placeholder/80/80" alt="Khóa học"
+                                        class="w-20 h-20 rounded-lg object-cover" />
+                                    <div class="ml-4">
+                                        <h4 class="font-semibold">Món Ăn Miền Trung</h4>
+                                        <p class="text-gray-400">25 bài học • 18 giờ</p>
+                                        <button class="mt-2 text-yellow-400 hover:text-yellow-300">Xem chi tiết
+                                            →</button>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="flex items-center p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors duration-300">
+                                    <img src="/api/placeholder/80/80" alt="Khóa học"
+                                        class="w-20 h-20 rounded-lg object-cover" />
+                                    <div class="ml-4">
+                                        <h4 class="font-semibold">Món Ăn Miền Nam</h4>
+                                        <p class="text-gray-400">22 bài học • 16 giờ</p>
+                                        <button class="mt-2 text-yellow-400 hover:text-yellow-300">Xem chi tiết
+                                            →</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <!-- Ẩm thực vùng miền với style mới -->
+    <section class="py-20 bg-gray-50" id="vung-mien">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Ẩm Thực Vùng Miền</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Miền Bắc -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover-scale">
+                    <img src="/api/placeholder/400/300" alt="Ẩm thực miền Bắc" class="w-full h-56 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-4">Miền Bắc</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• Phở Hà Nội</li>
+                            <li>• Bún chả</li>
+                            <li>• Bánh cuốn</li>
+                            <li>• Chả cá Lã Vọng</li>
+                        </ul>
+                        <button
+                            class="mt-6 w-full bg-red-600 text-white py-3 rounded-full hover:bg-red-700 transition-colors duration-300">
+                            Khám phá thêm
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Miền Trung -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover-scale">
+                    <img src="/api/placeholder/400/300" alt="Ẩm thực miền Trung" class="w-full h-56 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-4">Miền Trung</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• Bún bò Huế</li>
+                            <li>• Mì Quảng</li>
+                            <li>• Bánh bèo</li>
+                            <li>• Cơm hến</li>
+                        </ul>
+                        <button
+                            class="mt-6 w-full bg-red-600 text-white py-3 rounded-full hover:bg-red-700 transition-colors duration-300">
+                            Khám phá thêm
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Miền Nam -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover-scale">
+                    <img src="/api/placeholder/400/300" alt="Ẩm thực miền Nam" class="w-full h-56 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-4">Miền Nam</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• Hủ tiếu Nam Vang</li>
+                            <li>• Cơm tấm</li>
+                            <li>• Bánh xèo</li>
+                            <li>• Lẩu mắm</li>
+                        </ul>
+                        <button
+                            class="mt-6 w-full bg-red-600 text-white py-3 rounded-full hover:bg-red-700 transition-colors duration-300">
+                            Khám phá thêm
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phần đặt bàn -->
+    <section class="py-20 bg-white" id="dat-ban">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-gray-900 rounded-xl p-8 text-white">
+                    <h2 class="text-3xl font-bold mb-6">Đặt Bàn Ngay</h2>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block mb-2">Họ và tên</label>
+                            <input type="text" class="w-full px-4 py-3 rounded-lg bg-gray-800 text-white"
+                                placeholder="Nhập họ tên của bạn" />
+                        </div>
+                        <div>
+                            <label class="block mb-2">Số điện thoại</label>
+                            <input type="tel" class="w-full px-4 py-3 rounded-lg bg-gray-800 text-white"
+                                placeholder="Nhập số điện thoại" />
+                        </div>
+                        <div>
+                            <label class="block mb-2">Ngày giờ</label>
+                            <input type="datetime-local" class="w-full px-4 py-3 rounded-lg bg-gray-800 text-white" />
+                        </div>
+                        <div>
+                            <label class="block mb-2">Số người</label>
+                            <select class="w-full px-4 py-3 rounded-lg bg-gray-800 text-white">
+                                <option>2 người</option>
+                                <option>4 người</option>
+                                <option>6 người</option>
+                                <option>8 người</option>
+                                <option>Trên 8 người</option>
+                            </select>
+                        </div>
+                        <button
+                            class="w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700 transition-colors duration-300">
+                            Đặt bàn ngay
+                        </button>
+                    </form>
+                </div>
+                <div class="relative">
+                    <img src="/api/placeholder/600/800" alt="Nhà hàng" class="w-full h-full object-cover rounded-xl" />
+                    <div class="absolute bottom-6 left-6 right-6 bg-white bg-opacity-90 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-2">Địa chỉ nhà hàng</h3>
+                        <p class="text-gray-600">123 Đường ABC, Quận XYZ, Thành phố HCM</p>
+                        <div class="mt-4 flex space-x-4">
+                            <div>
+                                <strong class="block">Giờ mở cửa</strong>
+                                <span class="text-gray-600">7:00 - 22:00</span>
+                            </div>
+                            <div>
+                                <strong class="block">Hotline</strong>
+                                <span class="text-gray-600">1900 1234</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer mới -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Ẩm Thực Việt Nam</h3>
+                    <p class="text-gray-400">Khám phá tinh hoa ẩm thực Việt qua những món ăn đặc sắc và độc đáo.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Liên kết nhanh</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Trang chủ</a></li>
+                        <li><a href="#" class="hover:text-white">Món ngon</a></li>
+                        <li><a href="#" class="hover:text-white">Video</a></li>
+                        <li><a href="#" class="hover:text-white">Đặt bàn</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Liên hệ</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>123 Đường ABC, Quận XYZ</li>
+                        <li>Tel: 1900 1234</li>
+                        <li>Email: info@amthucviet.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Theo dõi chúng tôi</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+                        <a href="#" class="text-gray-400 hover:text-white">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2025 Ẩm Thực Việt Nam. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
